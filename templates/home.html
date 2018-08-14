@@ -1,0 +1,19 @@
+{% extends 'layout.html' %}
+
+{% block body %}
+<h1>Abstract</h1>
+<p>In genetic evolution, meiotic recombination plays an important role. Recombination introduces genetic
+variations and is a vital source of biodiversity and appears as a driving force in evolutionary development.
+Local regions of chromosomes where recombination events tend to be concentrated are known as hotspots
+and regions with relatively low frequencies of recombination are called coldspots. Predicting hotspots and
+coldspots can enlighten structure of recombination and genome evolution. In this paper, we proposed
+a predictor, called iRecSpot-EF to predict recombination hot and cold spots. iRecSpot-EF uses a novel
+set of features extracted from the genome sequences. We introduce the frequency of l, k, p-mers in the
+sequence as features. After the feature extraction, the best features are selected using AdaBoost algorithm.
+We have selected logistic regression algorithm as the classification algorithm. iRecSpot-EF was tested
+on a standard benchmark dataset using cross-fold validation. It achieved an accuracy of 95.14% and
+area under Receiver Operating Characteristic curve (auROC) of 0.985. The performance of iRecSpot-
+EF is significantly better than the state-of-the-art methods. iRecSpot-EF is readily available for use from
+<a href="http://irecspot.pythonanywhere.com/server" target="_blank">http://irecspot.pythonanywhere.com/server</a>.</p>
+
+{% endblock %}
